@@ -36,7 +36,7 @@ TEST(NotaktoTest, DrawBoard1) {
     -------------
   )";
 
-  // Don't modify the next 3 lines.
+  // Don't modify the next 3 lines, but don't forget to copy them.
   CaptureStdout();
   draw_board(board);
   EXPECT_EQ(GetCapturedStdout(), format_output(expected_output));
@@ -59,7 +59,7 @@ TEST(NotaktoTest, PlaceX1) {
   // TODO: Fill the board's starting state, the index to place at, the expected
   // answer and the expected board state after the placement.
   bool board[3][3] = {};
-  bool idx = -1;
+  int idx = -1;
   bool expected_answer = false;
   bool expected_board[3][3] = {};
 
